@@ -1,4 +1,5 @@
 import React from "react";
+import Detail from "./Detail.jsx";
 
 function Card(props) {
   return (
@@ -8,8 +9,8 @@ function Card(props) {
         <img src={props.img} alt="avatar_img" className="circle-img" />
       </div>
       <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
+        <Detail data={props.tel} />
+        <Detail data={props.email} />
       </div>
     </div>
   );
